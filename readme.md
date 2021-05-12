@@ -6,6 +6,16 @@
 
 https://github.com/claudineijose/mba-igti/tree/master/REA/atividade_previa/angular
 
-### Angular
+### `ng serve`
+
+### React
 
 
+https://github.com/claudineijose/mba-igti/tree/master/REA/atividade_previa/react
+
+
+### Vue
+
+### `npm run dev`
+
+https://github.com/claudineijose/mba-igti/tree/master/REA/atividade_previa/vue
