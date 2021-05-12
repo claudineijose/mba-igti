@@ -35,24 +35,20 @@ class App extends Component{
 
   render(){
     return(
-      <div>
-      <header>
-        <div className="container">
-          <div className="card-panel">
-            <p className="row">Calcule o seu IMC: </p>
+      <div className="container">
+        <div className="card-panel">
+          <p className="row">Calcule o seu IMC: </p>
+        </div>
+        <div>
+          <div>
+            <InputLabel label="Digite o seu Peso (Kg):" id="peso" onChange={this.pesoOnChange} />
           </div>
           <div>
-            <div>
-              <InputLabel label="Digite o seu Peso (Kg):" id="peso" onChange={this.pesoOnChange} />
-            </div>
-            <div>
-              <InputLabel label="Digite o sua Altura (metros):" id="altura" onChange={this.alturaOnChange}/>
-            </div>
+            <InputLabel label="Digite o sua Altura (metros):" id="altura" onChange={this.alturaOnChange}/>
           </div>
-          <ResultLabel result={this.state.IMC._getIMC()}/>
         </div>
-      </header>
-    </div>
+        <ResultLabel result={this.state.IMC._getIMC()}/>
+      </div>
     )
   }
 }

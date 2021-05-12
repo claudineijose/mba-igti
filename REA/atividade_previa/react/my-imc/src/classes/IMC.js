@@ -10,6 +10,11 @@ export class IMC{
             this._imc = this._peso / (this._altura * this._altura);
         else 
             this._imc = null;
+
+        console.log(this._peso)
+        console.log(this._altura)
+        console.log(this._imc)
+        
     }
 
     _getIMC(){
@@ -18,7 +23,9 @@ export class IMC{
            return this._getDescricao(this._imc.toFixed(1)) 
         }
         else{
-            if (!this._peso)
+            if (!this._peso && !this._altura)
+                return "Favor preencher o seu PESO e ALTURA para calcular o IMC.";
+            else if (!this._peso)
                 return "Favor preencher o seu PESO em Kg para calcular o IMC.";
             else if(!this._altura)
                 return "Favor preencher a sua ALTURA em metros para calcular o IMC.";

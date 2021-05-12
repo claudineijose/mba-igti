@@ -1,0 +1,24 @@
+<header>
+  <div class="container">
+    <div class="card-panel">
+      <p class="row">Calcule o seu IMC: </p>
+    </div>
+    <div>
+      <div>
+          <app-input-label 
+            label="Digite o seu Peso (Kg):" 
+            customId="peso"
+            (input) = "atualizaPeso($event)"
+          ></app-input-label>
+      </div>
+      <div>
+        <app-input-label 
+          label="Digite o sua Altura (metros):" 
+          customId="altura"
+          (input) = "atualizaAltura($event)"
+          ></app-input-label>
+      </div>
+    </div>
+    <app-result-label></app-result-label>
+  </div>
+</header>
