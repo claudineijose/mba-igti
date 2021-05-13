@@ -18,8 +18,8 @@ class App extends Component{
   pesoOnChange = (event) => {
     this.setState(
       {
+        peso: +event.target.value,
         IMC: new IMC(+event.target.value, this.state.altura),
-        peso: +event.target.value
       }
     );
   } 
@@ -27,8 +27,8 @@ class App extends Component{
   alturaOnChange = (event) => {
     this.setState(
       {
-        IMC: new IMC(this.state.peso, this.state.altura),
-        altura: +event.target.value
+        altura: +event.target.value,
+        IMC: new IMC(this.state.peso, +event.target.value),
       }
     );    
   }
